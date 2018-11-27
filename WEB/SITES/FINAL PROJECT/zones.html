@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!--
+	Deon Desir
+	11/21/18
+-->
+
+<html lang = 'en'>
+	<head>
+		<meta charset = 'utf-8'>
+		<title>Medgar Evers College in 3 Zones</title>
+		<link rel = 'stylesheet' type = 'text/css' href = 'css/master.css'>
+		<script src = 'final.js'></script>
+		<style>
+			/* area {
+				display: block;
+				border: 3px dashed #E8175D;
+				background-color: #000;
+			} */
+		</style>
+	</head>
+	
+	<body>
+		<div id = 'wrapper'>
+			<nav id = 'top'>
+				<ul>
+					<li><a href = 'DEODES.html'>Home</a></li>
+					<li><a href = 'resume.html'>Resume</a></li>
+					<li><a href = 'favorites.html'>Favorite Sites</a></li>
+					<li><a href = 'mylife.html'>My Life</a></li>
+					<li><a href = 'friends.html'>Friends</a></li>
+					<li id = 'extra'></li>
+				</ul>
+			</nav>
+		
+			<main>
+				<h1>Medgar Evers College in 3 Zones <button onclick = 'goBack ()' id = 'back'>&lt;</button></h1>
+				
+				<map name = 'MEC'>
+					<area shape = 'rect' coords = '250,100,610,275' href = 'https://ares.mec.cuny.edu/academic-affairs/school-of-science-health-and-technology/' title = 'School of Science, Health and Technology' alt = 'School of Science, Health and Technology' />
+					
+					<area shape = 'rectangle' coords = '680,120,780,300' href = 'https://ares.mec.cuny.edu/academic-affairs/school-of-business/' title = 'School of Business' alt = 'School of Liberal Arts' />
+					
+					<area shape = 'rectangle' coords = '50,275,550,550' href = 'https://ares.mec.cuny.edu/academic-affairs/school-of-liberal-arts/' title = 'School of Liberal Arts' alt = 'School of Liberal Arts' />
+				</map>
+				
+				<img src = 'img/mec_campus_map.jpg' usemap = '#MEC' width = '970' height = '606' alt = 'MEC Campus Map' />
+			</main>
+		</div><!-- Close #wrapper -->
+		
+		<footer>
+			<p>Contact me via email: <a href = 'mailto:deon.desir@student.mec.cuny.edu'>deon.desir@student.mec.cuny.edu</a>.
+			<p id = 'date'></p>
+			<a href = '#top'><div id = 'jumper'>&#x2191;</div></a>
+		</footer>
+	</body>
+</html>

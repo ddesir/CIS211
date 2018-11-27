@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!--
+	Deon Desir
+	11/20/18
+-->
+
+<html lang = 'en'>
+	<head>
+		<meta charset = 'utf-8'>
+		<title>Feedback</title>
+		<link rel = 'stylesheet' type = 'text/css' href = 'css/master.css'>
+		<script src = 'final.js'></script>
+		
+		<style>
+			fieldset {
+				border: 1px solid #A8A7A7;
+				border-radius: 5px;
+				margin-bottom: 20px;
+			}
+			
+			legend {
+				font: normal 24px Avenir, sans-serif;
+				text-transform: uppercase;
+				color: #CC527A;
+			}
+			
+			[type = 'text'], [type = 'email'] {
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #A8A7A7;
+				border-radius: 5px;
+				box-sizing: border-box;
+				font: 16px Avenir, sans-serif;
+				color: #A8A7A7;
+			}
+			
+			[type = 'submit'], [type = 'reset'] {
+				margin: 0;
+				padding: 12px 20px;
+				border-radius: 5px;
+				background-color: #CC527A;
+				font: bold 24px Avenir, sans-serif;
+				color: #FFF;
+			}
+			
+			textarea {
+				width: 100%;
+				height: 150px;
+				padding: 12px 20px;
+				border: 1px solid #A8A7A7;
+				border-radius: 5px;
+				box-sizing: border-box;
+				font: 16px Avenir, sans-serif;
+				color: #A8A7A7;
+				resize: none;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id = 'wrapper'>
+			<nav id = 'top'>
+				<ul>
+					<li><a href = 'DEODES.html'>Home</a></li>
+					<li><a href = 'resume.html'>Resume</a></li>
+					<li><a href = 'favorites.html'>Favorite Sites</a></li>
+					<li><a href = 'mylife.html'>My Life</a></li>
+					<li><a href = 'friends.html'>Friends</a></li>
+					<li id = 'extra'></li>
+				</ul>
+			</nav>
+		
+			<main>
+				<h1>Feedback <button onclick = 'goBack ()' id = 'back'>&lt;</button></h1>
+				
+				<form method = 'post' action = 'mailto:deon.desir@student.mec.cuny.edu?subject=[Final Feedback]'>
+				
+					<fieldset>
+						<legend>Personal Information</legend>
+					
+						<label for = 'fname'>First Name:</label>
+						<input type = 'text' name = 'fname' id = 'fname' placeholder = 'John' />
+						
+						<label for = 'fname'>Last Name:</label>
+						<input type = 'text' name = 'lname' placeholder = 'Doe' />
+						<label for = 'email'>Email:</label>
+						<input type = 'email' name = 'email' id = 'email' placeholder = 'you@mec.cuny.edu' />
+					</fieldset>
+					
+					<fieldset>
+						<legend>Project Feedback</legend>
+						
+						<p>Have all of the requirements for the final project been met? 
+						<input name = 'reqs' type = 'radio' value = 'yes' />Yes
+						<input name = 'reqs' type = 'radio' value = 'no' />No
+						
+						<p>How would you rate my project overall? 
+						<select name = 'rating' id = 'rating'>
+							<option>&#x2605;</option>
+							<option>&#x2605;&#x2605;</option>
+							<option>&#x2605;&#x2605;&#x2605;</option>
+							<option>&#x2605;&#x2605;&#x2605;&#x2605;</option>
+							<option>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</option>
+						</select></p>
+						
+						<label for = 'comments'>Any further comments?</label>
+						<textarea name = 'comments' id = 'comments' placeholder = 'Your comments here...'></textarea>
+					</fieldset>
+					
+					<input type = 'submit' value = 'Submit'>
+					<input type = 'reset' value = 'Reset'>
+					
+				</form>
+			</main>
+		</div><!-- Close #wrapper -->
+		
+		<footer>
+			<p>Contact me via email: <a href = 'mailto:deon.desir@student.mec.cuny.edu'>deon.desir@student.mec.cuny.edu</a>.
+			<p id = 'date'></p>
+			<a href = '#top'><div id = 'jumper'>&#x2191;</div></a>
+		</footer>
+	</body>
+</html>

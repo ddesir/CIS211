@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!--
+	Deon Desir
+	11/24/18
+-->
+
+<html lang = 'en'>
+	<head>
+		<meta charset = 'utf-8'>
+		<title>Difference Between HTML and CSS</title>
+		<link rel = 'stylesheet' type = 'text/css' href = 'css/master.css'>
+		<script src = 'final.js'></script>
+	</head>
+	
+	<body>
+		<div id = 'wrapper'>
+			<nav id = 'top'>
+				<ul>
+					<li><a href = 'DEODES.html'>Home</a></li>
+					<li><a href = 'resume.html'>Resume</a></li>
+					<li><a href = 'favorites.html'>Favorite Sites</a></li>
+					<li><a href = 'mylife.html'>My Life</a></li>
+					<li><a href = 'friends.html'>Friends</a></li>
+					<li id = 'extra'></li>
+				</ul>
+			</nav>
+		
+			<main>
+				<h1>Difference Between HTML and CSS <button onclick = 'goBack ()' id = 'back'>&lt;</button></h1>
+				
+				<h2>Separation of Content from Design</h2>
+				
+				<h3>HTML</h3>
+				
+				<p>HTML stands for Hyper-Text Markup Language. It is used to structure the content of a web page and can be considered the bones of the web page.
+				
+				<pre>
+					<code>
+&lt;main&gt;
+	&lt;h1&gt;My Life&lt;/h1&gt;
+
+	&lt;table&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;&lt;!-- Row 1 --&gt;
+				&lt;td&gt;&lt;a href = '../../../ASSIGNMENTS/DEODES10.html'&gt;DEODES10&lt;/a&gt;&lt;/td&gt;
+				&lt;td&gt;&lt;a href = 'professions.html'&gt;CIS Professions&lt;/a&gt;&lt;/td&gt;
+				&lt;td&gt;&lt;a href = '../../../ASSIGNMENTS/DEODES30.html'&gt;DEODES30&lt;/a&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+					</code>
+				</pre>
+				
+				<h3>CSS</h3>
+				
+				<p>CSS, or Cascading Style Sheets is used to style the structured markup of the HTML. If HTML is the bones, CSS is the flesh.
+				
+				<pre>
+					<code>
+table {
+	table-layout: fixed;
+	margin: auto;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	width: 100%;
+}
+					</code>
+				</pre>
+			</main>
+		</div><!-- Close #wrapper -->
+		
+		<footer>
+			<p>Contact me via email: <a href = 'mailto:deon.desir@student.mec.cuny.edu'>deon.desir@student.mec.cuny.edu</a>.
+			<p id = 'date'></p>
+			<a href = '#top'><div id = 'jumper'>&#x2191;</div></a>
+		</footer>
+	</body>
+</html>
