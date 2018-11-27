@@ -11,7 +11,7 @@ body, html {
 #wrapper {
 	width: 80%;
 	min-width: 1080px;
-	min-height: 100%;
+	min-height: 90%;
 	margin: 0 auto;
 	overflow: hidden;
 	background-color: #FFF;
@@ -184,18 +184,6 @@ blockquote {
 	border-left: 10px solid #CC527A;
 }
 
-/* 
-blockquote::before {
-	position: relative;
-	top: 20px;
-	left: -10px;
-	content: '\275D';
-	font-size: 100px;
-	font-style: normal;
-	color: #CC527A;
-}
- */
-
 p.author {
 	text-align: right;
 	text-transform: uppercase;
@@ -209,7 +197,13 @@ p.author::before {
 
 footer {
 	position: relative;
-	bottom: -10px;
+	width: 80%;
+	min-width: 1080px;
+	min-height: 10%;
+	margin: 0 auto;
+	padding: 18px 0;
+	/* bottom: -10px; */
+	background-color: #363636;
 	text-align: center;
 	color: #FFF;
 }
