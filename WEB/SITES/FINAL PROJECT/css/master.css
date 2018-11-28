@@ -3,45 +3,66 @@
 
 body, html {
 	height: 100%;
-	background: #474747 url('../img/stripes_tile.png') repeat;
 	font: 18px Avenir, sans-serif;
 	color: #363636;
+	background: #474747 url('../img/stripes_tile.png') repeat;
 }
 
 #wrapper {
 	width: 80%;
 	min-width: 1080px;
-	min-height: 90%;
+	min-height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
 	background-color: #FFF;
 }
 
+/* General Properties */
 h1 {
-	font: bold 48px Avenir, sans-serif;
+	font-weight: bold;
+	font-size: 48px;
 	color: #474747;
 }
 
 h2 {
-	font: bold 32px Avenir, sans-serif;
+	font-weight: bold;
+	font-size: 32px;
 	color: #474747;
 }
 
 h3 {
-	font: normal 24px Avenir, sans-serif;
-	color: #E8175D;
+	font-weight: normal;
+	font-size: 24px;
 	text-transform: uppercase;
+	color: #E8175D;
 }
 
-#back {
-	margin: 0;
-	padding: 2px 10px;
-	vertical-align: middle;
-	border-radius: 5px;
-	background-color: #CC527A;
-	font: bold 32px Avenir, sans-serif;
+b, strong {
+	font-weight: bold;
+	color: #CC527A;
+}
+
+i, em {
+	font-style: italic;
+	color: #CC527A;
+}
+
+u {
+	text-decoration: underline;
+	text-decoration-color: #CC527A;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #E8175D;
+}
+
+a:hover {
+	font-weight: bold;
+	text-decoration: none;
 	color: #FFF;
-	box-shadow: none;
+	background-color: #E8175D;
 }
 
 nav ul {
@@ -49,10 +70,10 @@ nav ul {
 	top: 0;
 	left: 0;
 	width: 100%;
-	list-style-type: none;
 	margin: 0;
 	padding: 0 10px;
 	overflow: hidden;
+	list-style-type: none;
 	background-color: #363636;
 }
 
@@ -62,11 +83,12 @@ nav ul li {
 
 nav ul li a {
 	display: block;
-	font: bold 18px Avenir, sans-serif;
-	color: #FFF;
-	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	color: #FFF;
+	text-align: center;
 }
 
 nav ul li a:hover {
@@ -79,80 +101,97 @@ nav ul li a:active, .active {
 }
 
 nav ul li a:hover .active {
-	background-color: #E8175D; /* #0211FC */
+	background-color: #E8175D;
 	box-shadow: inset 5px 5px 15px #000;
 }
 
-main, section {
-	margin: 53px auto;
+main {
 	width: 90%;
+	margin: 53px auto;
 	background-color: #FFF;
 }
 
 table {
 	table-layout: fixed;
+	width: 100%;
 	margin: auto;
+	border-collapse: collapse;
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
-	border-collapse: collapse;
-	width: 100%;
 }
 
 tr {
 	display: table-row;
-	height: 100px;
-	border-bottom: inherit;
 	border-color: #363636;
 }
+
+
 
 tr:nth-child(odd) {
 	background: #A8A7A7;
 }
 
+#life tr {
+	height: 100px;
+}
+
 td {
 	padding: 10px;
-	font: bold 18px Avenir, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
 	border: 0px;
 }
 
 td a {
 	display: block;
-	text-decoration: none;
 }
 
-ol#rank {
-	list-style: none;
-	counter-reset: count;
+td img {
+	padding: 10px;
+	vertical-align: middle;
+}
+
+#life td:hover {
+	color: #FFF;
+	background-color: #E8175D;
+}
+
+#life td:hover a {
+	color: #FFF;
+}
+
+ol.rank {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
+	list-style: none;
+	counter-reset: count;
 }
 
-ol#rank li {
-	counter-increment: count;
+ol.rank li {
 	display: flex;
 	width: 100%;
 	margin: 0;
 	padding: 20px 0;
+	counter-increment: count;
 }
 
-ol#rank li::before {
-	content: counter(count) '.';
-	font-weight: bold;
-	font-size: 72px;
+ol.rank li::before {
 	margin-right: 10px;
-	font-family: 'Abril Fatface', serif;
-	color: #474747;
+	font: bold 72px 'Abril Fatface', serif;
+	color: #CC527A;
 	line-height: 1;
 	vertical-align: middle;
+	content: counter(count) '.';
 }
 
-ol#rank img {
-	float: right;
+ol.rank img {
 	margin-left: 20px;
 	width: 100px;
 	height: auto;
+	float: right;
 }
 
 dt {
@@ -170,25 +209,26 @@ dt::after {
 }
 
 pre code {
-	background-color: #A8A7A7;
 	display: block;
 	padding: 10px;
-	border: 1px solid #363636;
 	font-size: 15px;
+	border: 1px solid #363636;
+	background-color: #A8A7A7;
 }
 
 blockquote {
-	font: italic 32px Avenir, sans-serif ;
 	margin: 0;
 	padding: 0 30px;
+	font-style: italic;
+	font-size: 32px;
 	border-left: 10px solid #CC527A;
 }
 
 p.author {
+	margin-bottom: 30px;
 	text-align: right;
 	text-transform: uppercase;
 	color: #CC527A;
-	margin-bottom: 30px;
 }
 
 p.author::before {
@@ -202,22 +242,35 @@ footer {
 	min-height: 10%;
 	margin: 0 auto;
 	padding: 18px 0;
-	/* bottom: -10px; */
-	background-color: #363636;
 	text-align: center;
 	color: #FFF;
+	background-color: #363636;
 }
 
+/* Special */
 div#jumper {
+	display: block;
 	margin: 10px auto;
 	height: 50px;
 	width: 50px;
-	display: block;
 	overflow: hidden;
-	background-color: #CC527A;
-	border-radius: 100%;
-	font: bold 63px Avenir, sans-serif;
+	font-weight: bold;
+	font-size: 63px;
 	text-decoration: none;
 	text-align: center;
 	color: #FFF;
+	background-color: #CC527A;
+	border-radius: 100%;
+}
+
+#back {
+	margin: 0;
+	padding: 2px 10px;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 32px;
+	color: #FFF;
+	border-radius: 5px;
+	background-color: #CC527A;
+	box-shadow: none;
 }
