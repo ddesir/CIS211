@@ -29,11 +29,73 @@
 			<main>
 				<h1>Difference Between HTML and CSS <button onclick = 'goBack ()' id = 'back'>&lt;</button></h1>
 				
+				<p>HTML and CSS are the core languages for building webpages and web based applications. HTML stands for Hyper-Text Markup Language. It is used to structure the content of a web page and can be considered the bones of the web page. CSS, or Cascading Style Sheets is used to style the structured markup of the HTML. If HTML is the bones, CSS is the flesh.</p>
+				
+				<table>
+					<thead>
+						<tr>
+							<td></td>
+							<th>HTML</th>
+							<th>CSS</th>
+						</tr>
+					</thead>
+						
+					<tbody>
+						<tr>
+							<th>Definition</th>
+							<td>HTML is a <b>markup</b> language for <b>describing</b> web documents (web pages).</td>
+							<td>CSS <b>describes</b> how HTML elements are to be <b>displayed</b> on screen, paper, or in other media.</td>
+						</tr>
+						
+						<tr>
+							<th>Basics</th>
+							<td>Dictates <b>content</b> and <b>structure</b> of a web page.</td>
+							<td>Modifies <b>design</b> and <b>display</b> of HTML elements.</td>
+						</tr>
+						
+						<tr>
+							<th>File Differences</th>
+							<td>You <u>can</u> use CSS in an HTML file.</td>
+							<td>You <u>can not</u> use HTML in a CSS style sheet.</td>
+						</tr>
+						
+						<tr>
+							<th rowspan = '4'>Uses</th>
+							<td>Publishes Documents online</td>
+							<td>Design colors, fonts and layout</td>
+						</tr>
+						
+						<tr>
+							<td>Retrieve online info</td>
+							<td>Adapt display across platforms</td>
+						</tr>
+						
+						<tr>
+							<td>Design forms</td>
+							<td>Easier site maintenance</td>
+						</tr>
+						
+						<tr>
+							<td>Include apps in their documents</td>
+							<td>Tailor multiple pages using a single stylesheet</td>
+						</tr>
+						
+						<tr>
+							<th>Examples</th>
+							<td>HTML consists of <b>tags</b> surrounding <b>content</b><br />
+							<code><b>&lt;tag&gt;</b>content<b>&lt;/tag&gt;</b></code></td>
+							<td>CSS consists of <b>selectors</b> followed by a <b>declaration block</b><br />
+							<code><b>{</b>property<b>:</b> value<b>;}</b></code></td>
+						</tr>
+					</tbody>
+					
+				</table>
+				
 				<h2>Separation of Content from Design</h2>
 				
-				<h3>HTML</h3>
+				<p>Below is example code from HTML included in this site and the relevant CSS that handles the presentation.
 				
-				<p>HTML stands for Hyper-Text Markup Language. It is used to structure the content of a web page and can be considered the bones of the web page.
+				<h3>HTML</h3>
 				
 				<pre>
 					<code>
@@ -51,8 +113,6 @@
 				</pre>
 				
 				<h3>CSS</h3>
-				
-				<p>CSS, or Cascading Style Sheets is used to style the structured markup of the HTML. If HTML is the bones, CSS is the flesh.
 				
 				<pre>
 					<code>
