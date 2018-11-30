@@ -83,26 +83,31 @@ nav ul li {
 
 nav ul li a {
 	display: block;
-	padding: 14px 16px;
+	padding: 14px 16px 14px 48px;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 18px;
 	color: #FFF;
 	text-align: center;
+	background: url('../img/final_idk_pink.png') no-repeat;
+	background-position: 14px 16px;
 }
 
 nav ul li a:hover {
-	background-color: #E8175D;
+	background: #E8175D url('../img/final_idk_white.png') no-repeat;
+	background-position: 14px 16px;
 }
 
 nav ul li a:active, .active {
-	background-color: #E8175D;
 	box-shadow: inset 5px 5px 15px #000;
+	background: #E8175D url('../img/final_idk_white.png') no-repeat;
+	background-position: 14px 16px;
 }
 
 nav ul li a:hover .active {
-	background-color: #E8175D;
 	box-shadow: inset 5px 5px 15px #000;
+	background: #E8175D url('../img/final_idk_white.png') no-repeat;
+	background-position: 14px 16px;
 }
 
 main {
