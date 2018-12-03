@@ -331,6 +331,7 @@ footer {
 	margin: 0 auto;
 	margin-right: 20px;
 	padding: 3px;
+	vertical-align: middle;
 	border: 1px solid #363636;
 	border-radius: 100%;
 }
@@ -432,10 +433,12 @@ div#jumper {
 }
 
 div.friend {
-	box-sizing: content-box;
+	display: block;
+	box-sizing: border-box;
 	width: 100%;
+	height: 125px;
 	padding-bottom: 10px;
-	margin: 0 0 0 10px;
+	margin: 10px;
 }
 
 .banner {
