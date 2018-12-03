@@ -1,7 +1,7 @@
 // Deon Desir 18 November 2018
 
 // Displays date and time at html element with id 'date'
-currentDate = function () {
+function currentDate () {
 	var mon = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 	var dow = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 	var nd = new Date();
@@ -17,7 +17,8 @@ currentDate = function () {
 	document.getElementById('date').innerHTML = 'The current date and time is: ' + dow[nd.getDay()] + ', ' + mon[nd.getMonth()] + ' ' + day + ', ' + yr + ' ' + hr + ':' + min + ':' + sec;
 }
 
-isNav = function () {
+// Checks if page is included in primary navigation
+function isNav () {
 	pg = document.title;
 	
 	if (pg == 'Home' || pg == 'Resume' || pg == 'Favorite Sites' || pg == 'My Life' || pg == 'Friends') {
@@ -27,7 +28,8 @@ isNav = function () {
 	}
 }
 
-extraNav = function () {
+// If 
+function extraNav () {
 	if (!isNav()) {
 		document.getElementById('extra').innerHTML = "<li><a href = '' class = 'active'>" + pg + "</a></li>";
 	} else {
@@ -35,7 +37,7 @@ extraNav = function () {
 	}
 }
 
-goBack = function () {
+function goBack () {
 	window.history.back ();
 }
 

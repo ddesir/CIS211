@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 @import url('https://fonts.googleapis.com/css?family=Avenir');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,900');
 
 body, html {
 	height: 100%;
@@ -15,6 +16,18 @@ body, html {
 	margin: 0 auto;
 	overflow: hidden;
 	background-color: #FFF;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0px;
+	overflow: hidden;
+	box-sizing: content-box;
+	background-color: #363636;
 }
 
 /* General Properties */
@@ -65,9 +78,24 @@ a:hover {
 	background-color: #E8175D;
 }
 
+marquee {
+	display: block;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 14px 10px;
+	overflow: hidden;
+	font-weight: bold;
+	font-size: 18px;
+	color: #FFF;
+	background-color: #474747;
+}
+
 nav ul {
 	position: fixed;
-	top: 0;
+	top: 75px;
 	left: 0;
 	width: 100%;
 	margin: 0;
@@ -75,6 +103,8 @@ nav ul {
 	overflow: hidden;
 	list-style-type: none;
 	background-color: #363636;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
 }
 
 nav ul li {
@@ -112,7 +142,7 @@ nav ul li a:hover .active {
 
 main {
 	width: 90%;
-	margin: 53px auto;
+	margin: 125px auto auto;
 	background-color: #FFF;
 }
 
@@ -219,7 +249,7 @@ td img {
 	float: right;
 }
 
-.rank img.album {
+.rank .album img {
 	width: 100px;
 	height: 100px;
 }
@@ -291,22 +321,34 @@ footer {
 .right {
 	margin: auto;
 	padding: 0;
-	width: 370px;
 	float: right;
 	clear: right;
-	text-align: center;
 }
 
 .profile-photo {
+	width: 100px;
+	height: 100px;
 	margin: 0 auto;
+	margin-right: 20px;
 	padding: 3px;
-	border: 3px solid #E8175D;
+	border: 1px solid #363636;
 	border-radius: 100%;
+}
+
+.me {
+	width: 200px;
+	height: 200px;
+	border: 3px solid #E8175D;
 }
 
 .clear {
 	display: block;
 	clear: left;
+}
+
+#rtmain {
+	width: 370px;
+	text-align: center;
 }
 
 iframe {
@@ -387,4 +429,53 @@ div#jumper {
 	border-radius: 5px;
 	background-color: #CC527A;
 	box-shadow: none;
+}
+
+div.friend {
+	box-sizing: content-box;
+	width: 100%;
+	padding-bottom: 10px;
+	margin: 0 0 0 10px;
+}
+
+.banner {
+	position: relative;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 14px 10px;
+	font-family: 'Source Code Pro', monospace;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	font-size: 40px;
+	font-weight: 900;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	background-size: 120% 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-ms-background-clip: text;
+	-ms-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	background-image: linear-gradient(45deg, 
+					#E8175D, 
+					#CC527A,
+					#E8175D,
+					#CC527A);
+	animation: .8s shake infinite alternate;
+}
+
+@keyframes shake {
+	0% { transform: skewX(-15deg); }
+	5% { transform: skewX(15deg); }
+	10% { transform: skewX(-15deg); }
+	15% { transform: skewX(15deg); }
+	20% { transform: skewX(0deg); }
+	100% { transform: skewX(0deg); }  
 }
