@@ -78,21 +78,6 @@ a:hover {
 	background-color: #E8175D;
 }
 
-marquee {
-	display: block;
-	position: fixed;
-	top: 0px;
-	left: 0;
-	width: 100%;
-	margin: 0;
-	padding: 14px 10px;
-	overflow: hidden;
-	font-weight: bold;
-	font-size: 18px;
-	color: #FFF;
-	background-color: #474747;
-}
-
 nav ul {
 	position: fixed;
 	top: 75px;
