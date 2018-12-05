@@ -67,7 +67,7 @@ u {
 
 a {
 	font-weight: bold;
-	text-decoration: none;
+	text-decoration: underline;
 	color: #E8175D;
 }
 
@@ -177,6 +177,7 @@ td {
 
 td a {
 	display: block;
+	text-decoration: none;
 }
 
 td img {
