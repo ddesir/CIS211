@@ -426,6 +426,12 @@ div.friend {
 	margin: 10px;
 }
 
+.caption {
+	margin-top: 5px;
+	font-size: 16px;
+	color: #474747;
+}
+
 .banner {
 	position: relative;
 	top: 0px;
