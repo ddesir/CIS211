@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<!--
+	Deon Desir
+	11/24/18
+-->
+
+<html lang = 'en'>
+	<head>
+		<meta charset = 'utf-8'>
+		<title>Difference Between HTML and CSS</title>
+		<link rel = 'stylesheet' type = 'text/css' href = 'css/master.css'>
+		<script src = 'final.js'></script>
+	</head>
+	
+	<body id = 'top'>
+		<div id = 'wrapper'>
+			
+			<header>
+				<div>
+ 					<span class = 'banner'>Welcome to my humble website.</span>
+ 				</div>
+				
+				<nav>
+					<ul>
+						<li><a href = 'DEODES.html'>Home</a></li>
+						<li><a href = 'resume.html'>Resume</a></li>
+						<li><a href = 'favorites.html'>Favorite Sites</a></li>
+						<li><a href = 'mylife.html'>My Life</a></li>
+						<li><a href = 'friends.html'>Friends</a></li>
+						<li id = 'extra'></li>
+					</ul>
+				</nav>
+			</header>
+		
+			<main>
+				<h1>Difference Between HTML and CSS <button onclick = 'goBack ()' id = 'back'>&lt;</button></h1>
+				
+				<p>HTML and CSS are the core languages for building webpages and web based applications. HTML stands for Hyper-Text Markup Language. It is used to structure the content of a web page and can be considered the bones of the web page. CSS, or Cascading Style Sheets is used to style the structured markup of the HTML. If HTML is the bones, CSS is the flesh.</p>
+				
+				<table>
+					<thead>
+						<tr>
+							<td></td>
+							<th>HTML</th>
+							<th>CSS</th>
+						</tr>
+					</thead>
+						
+					<tbody>
+						<tr>
+							<th>Definition</th>
+							<td>HTML is a <b>markup</b> language for <b>describing</b> web documents (web pages).</td>
+							<td>CSS <b>describes</b> how HTML elements are to be <b>displayed</b> on screen, paper, or in other media.</td>
+						</tr>
+						
+						<tr>
+							<th>Basics</th>
+							<td>Dictates <b>content</b> and <b>structure</b> of a web page.</td>
+							<td>Modifies <b>design</b> and <b>display</b> of HTML elements.</td>
+						</tr>
+						
+						<tr>
+							<th>File Differences</th>
+							<td>You <u>can</u> use CSS in an HTML file.</td>
+							<td>You <u>can not</u> use HTML in a CSS style sheet.</td>
+						</tr>
+						
+						<tr>
+							<th rowspan = '4'>Uses</th>
+							<td>Publishes Documents online</td>
+							<td>Design colors, fonts and layout</td>
+						</tr>
+						
+						<tr>
+							<td>Retrieve online info</td>
+							<td>Adapt display across platforms</td>
+						</tr>
+						
+						<tr>
+							<td>Design forms</td>
+							<td>Easier site maintenance</td>
+						</tr>
+						
+						<tr>
+							<td>Include apps in their documents</td>
+							<td>Tailor multiple pages using a single stylesheet</td>
+						</tr>
+						
+						<tr>
+							<th>Examples</th>
+							<td>HTML consists of <b>tags</b> surrounding <b>content</b><br />
+							<code><b>&lt;tag&gt;</b>content<b>&lt;/tag&gt;</b></code></td>
+							<td>CSS consists of <b>selectors</b> followed by a <b>declaration block</b><br />
+							<code><b>{</b>property<b>:</b> value<b>;}</b></code></td>
+						</tr>
+					</tbody>
+					
+				</table>
+				
+				<h2>Separation of Content from Design</h2>
+				
+				<p>Below is example code from HTML included in this site and the relevant CSS that handles the presentation.
+				
+				<h3>HTML</h3>
+				
+				<pre>
+					<code>
+&lt;main&gt;
+	&lt;h1&gt;My Life&lt;/h1&gt;
+
+	&lt;table&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;&lt;!-- Row 1 --&gt;
+				&lt;td&gt;&lt;a href = '../../../ASSIGNMENTS/DEODES10.html'&gt;DEODES10&lt;/a&gt;&lt;/td&gt;
+				&lt;td&gt;&lt;a href = 'professions.html'&gt;CIS Professions&lt;/a&gt;&lt;/td&gt;
+				&lt;td&gt;&lt;a href = '../../../ASSIGNMENTS/DEODES30.html'&gt;DEODES30&lt;/a&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+					</code>
+				</pre>
+				
+				<h3>CSS</h3>
+				
+				<pre>
+					<code>
+table {
+	table-layout: fixed;
+	margin: auto;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	width: 100%;
+}
+					</code>
+				</pre>
+			</main>
+		</div><!-- Close #wrapper -->
+		
+		<footer>
+			<p>Contact me via email: <a href = 'mailto:&#100;&#101;&#111;&#110;&#046;&#100;&#101;&#115;&#105;&#114;&#064;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#046;&#109;&#101;&#099;&#046;&#099;&#117;&#110;&#121;&#046;&#101;&#100;&#117;'>&#100;&#101;&#111;&#110;&#046;&#100;&#101;&#115;&#105;&#114;&#064;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#046;&#109;&#101;&#099;&#046;&#099;&#117;&#110;&#121;&#046;&#101;&#100;&#117;</a>.
+			<p id = 'date'></p>
+			<a href = '#top'><div id = 'jumper'>&#x2191;</div></a>
+		</footer>
+	</body>
+</html>

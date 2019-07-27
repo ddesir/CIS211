@@ -1,0 +1,41 @@
+/* Deon Desir 06 November 2018 */
+
+body {
+	color: #FFF;
+	background-color: #B8D1CC;
+	font-family: "Times New Roman", serif;
+}
+
+#outerwrapper {
+	width: 75%;
+	margin: 100px 150px 100px 150px;
+}
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+}
+
+#main {
+	background-color: #FFA98B;
+	padding: 14px;
+	clear: both;
+}
+
+.floatleft {
+	float: left;
+	margin-right: 3%;
+}
+
+.floatright {
+	float: right;
+	margin-left: 3%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#main, footer {
+	clear: both;
+}

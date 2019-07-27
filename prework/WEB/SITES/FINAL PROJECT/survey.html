@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<!--
+	Deon Desir
+	11/20/18
+-->
+
+<html lang = 'en'>
+	<head>
+		<meta charset = 'utf-8'>
+		<title>Feedback</title>
+		<link rel = 'stylesheet' type = 'text/css' href = 'css/master.css'>
+		<script src = 'final.js'></script>
+	</head>
+	
+	<body id = 'top'>
+		<div id = 'wrapper'>
+			
+			<header>
+				<div>
+ 					<span class = 'banner'>Welcome to my humble website.</span>
+ 				</div>
+				
+				<nav>
+					<ul>
+						<li><a href = 'DEODES.html'>Home</a></li>
+						<li><a href = 'resume.html'>Resume</a></li>
+						<li><a href = 'favorites.html'>Favorite Sites</a></li>
+						<li><a href = 'mylife.html'>My Life</a></li>
+						<li><a href = 'friends.html'>Friends</a></li>
+						<li id = 'extra'></li>
+					</ul>
+				</nav>
+			</header>
+		
+			<main>
+				<h1>Feedback <button onclick = 'goBack ()' id = 'back'>&lt;</button></h1>
+				
+				<form method = 'post' action = 'mailto:&#100;&#101;&#111;&#110;&#046;&#100;&#101;&#115;&#105;&#114;&#064;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#046;&#109;&#101;&#099;&#046;&#099;&#117;&#110;&#121;&#046;&#101;&#100;&#117;?subject=Feedback'>
+				
+					<fieldset>
+						<legend>Personal Information</legend>
+					
+						<label for = 'fname'>First Name:</label>
+						<input type = 'text' name = 'fname' id = 'fname' placeholder = 'John' />
+						
+						<label for = 'fname'>Last Name:</label>
+						<input type = 'text' name = 'lname' placeholder = 'Doe' />
+						<label for = 'email'>Email:</label>
+						<input type = 'email' name = 'email' id = 'email' placeholder = 'you@mec.cuny.edu' />
+					</fieldset>
+					
+					<fieldset>
+						<legend>Project Feedback</legend>
+						
+						<p>Have all of the requirements for the final project been met? 
+						<input name = 'reqs' type = 'radio' value = 'yes' />Yes
+						<input name = 'reqs' type = 'radio' value = 'no' />No
+						
+						<p>How would you rate my project overall? 
+						<select name = 'rating' id = 'rating'>
+							<option>&#x2605;</option>
+							<option>&#x2605;&#x2605;</option>
+							<option>&#x2605;&#x2605;&#x2605;</option>
+							<option>&#x2605;&#x2605;&#x2605;&#x2605;</option>
+							<option>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</option>
+						</select></p>
+						
+						<label for = 'comments'>Any further comments?</label>
+						<textarea name = 'comments' id = 'comments' placeholder = 'Your comments here...'></textarea>
+					</fieldset>
+					
+					<input type = 'submit' value = 'Submit'>
+					<input type = 'reset' value = 'Reset'>
+					
+				</form>
+			</main>
+		</div><!-- Close #wrapper -->
+		
+		<footer>
+			<p>Contact me via email: <a href = 'mailto:&#100;&#101;&#111;&#110;&#046;&#100;&#101;&#115;&#105;&#114;&#064;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#046;&#109;&#101;&#099;&#046;&#099;&#117;&#110;&#121;&#046;&#101;&#100;&#117;'>&#100;&#101;&#111;&#110;&#046;&#100;&#101;&#115;&#105;&#114;&#064;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#046;&#109;&#101;&#099;&#046;&#099;&#117;&#110;&#121;&#046;&#101;&#100;&#117;</a>.
+			<p id = 'date'></p>
+			<a href = '#top'><div id = 'jumper'>&#x2191;</div></a>
+		</footer>
+	</body>
+</html>
