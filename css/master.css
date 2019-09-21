@@ -2,7 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Avenir');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,900');
 
-body, html {
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 0.1px solid #0F0;
+}
+
+html, body {
 	height: 100%;
 	font: 18px Avenir, sans-serif;
 	color: #363636;
@@ -10,8 +17,15 @@ body, html {
 }
 
 #wrapper {
-	width: 80%;
-	min-width: 1080px;
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"main side"
+		"footer footer";
+	grid-template: 55px 1fr 55px / repeat(2, 1fr);
+	grid-gap: 16px;
+	max-width: 1080px;
+	min-width: 80%;
 	min-height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
@@ -19,15 +33,38 @@ body, html {
 }
 
 header {
+	grid-area: header;
 	position: fixed;
-	top: 0px;
+	top: 0;
 	left: 0;
-	width: 100%;
-	height: 130px;
-	margin: 0;
-	padding: 0px;
-	overflow: hidden;
-	box-sizing: content-box;
+	/* width: 100%; */
+	height: 55px;
+	background-color: #363636;
+}
+
+main {
+	width: 90%;
+	/* margin: 125px auto auto; */
+	background-color: #FFF;
+	grid-area: main;
+}
+
+.right {
+	grid-area: side;
+}
+
+footer {
+	grid-area: footer;
+	position: relative;
+	/* 
+width: 80%;
+	min-width: 1080px;
+	min-height: 10%;
+	margin: 0 auto;
+	padding: 18px 0;
+ */
+	text-align: center;
+	color: #FFF;
 	background-color: #363636;
 }
 
@@ -81,7 +118,7 @@ a:hover {
 
 nav ul {
 	position: fixed;
-	top: 75px;
+	top: 0px;
 	left: 0;
 	width: 100%;
 	margin: 0;
@@ -124,12 +161,6 @@ nav ul li a:hover .active {
 	box-shadow: inset 5px 5px 15px #000;
 	background: #E8175D url('../img/final_idk_white.png') no-repeat;
 	background-position: 14px 16px;
-}
-
-main {
-	width: 90%;
-	margin: 125px auto auto;
-	background-color: #FFF;
 }
 
 table {
@@ -282,18 +313,6 @@ p.author::before {
 	content: '\2014\0020'
 }
 
-footer {
-	position: relative;
-	width: 80%;
-	min-width: 1080px;
-	min-height: 10%;
-	margin: 0 auto;
-	padding: 18px 0;
-	text-align: center;
-	color: #FFF;
-	background-color: #363636;
-}
-
 .notop {
 	margin-top: 0;
 }
@@ -432,46 +451,4 @@ div.friend {
 	margin-top: 5px;
 	font-size: 16px;
 	color: #474747;
-}
-
-.banner {
-	position: relative;
-	top: 0px;
-	left: 0;
-	width: 100%;
-	margin: 0;
-	padding: 14px 10px;
-	font-family: 'Source Code Pro', monospace;
-	text-transform: uppercase;
-	letter-spacing: 6px;
-	font-size: 40px;
-	font-weight: 900;
-	text-decoration: none;
-	color: white;
-	text-align: center;
-	display: inline-block;
-	background-size: 120% 100%;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-	-ms-background-clip: text;
-	-ms-text-fill-color: transparent;
-	background-clip: text;
-	text-fill-color: transparent;
-	background-image: linear-gradient(45deg, 
-					#E8175D, 
-					#CC527A,
-					#E8175D,
-					#CC527A);
-	animation: .8s shake infinite alternate;
-}
-
-@keyframes shake {
-	0% { transform: skewX(-15deg); }
-	5% { transform: skewX(15deg); }
-	10% { transform: skewX(-15deg); }
-	15% { transform: skewX(15deg); }
-	20% { transform: skewX(0deg); }
-	100% { transform: skewX(0deg); }  
-}
+} 
